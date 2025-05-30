@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giải pháp quản lý trung tâm</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero -->
+  <section class="bg-white py-16 text-center">
+    <h1 class="text-4xl font-bold mb-4">Giải pháp quản lý trung tâm toàn diện</h1>
+    <p class="text-lg mb-6">Tiết kiệm thời gian, tối ưu chi phí, dễ dàng triển khai</p>
+    <a href="#pricing" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Xem bảng giá</a>
+  </section>
+
+  <!-- Lợi ích -->
+  <section class="py-16 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center mb-10">Lợi ích khi sử dụng phần mềm</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded shadow">Quản lý học viên & lớp học dễ dàng</div>
+      <div class="bg-white p-6 rounded shadow">Báo cáo thống kê đầy đủ, minh bạch</div>
+      <div class="bg-white p-6 rounded shadow">Hỗ trợ kỹ thuật nhanh chóng & chuyên nghiệp</div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 bg-gray-100">
+    <h2 class="text-2xl font-semibold text-center mb-10">Bảng giá dịch vụ</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Gói SaaS -->
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="text-xl font-bold mb-2">Gói SaaS</h3>
+        <p class="mb-2">Từ <strong>500.000đ/tháng</strong></p>
+        <p class="text-sm mb-4">Giới hạn theo số lượng tài liệu</p>
+        <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Đăng ký</a>
+      </div>
+
+      <!-- Gói Mua trọn gói -->
+      <div class="bg-white p-6 rounded shadow text-center border-2 border-blue-500">
+        <h3 class="text-xl font-bold mb-2">Mua Trọn Gói</h3>
+        <p class="mb-2">Liên hệ báo giá</p>
+        <p class="text-sm mb-4">+ phí duy trì server & hỗ trợ</p>
+        <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Liên hệ</a>
+      </div>
+
+      <!-- Gói Doanh nghiệp lớn -->
+      <div class="bg-white p-6 rounded shadow text-center">
+        <h3 class="text-xl font-bold mb-2">Gói Doanh nghiệp</h3>
+        <p class="mb-2">Tuỳ chỉnh theo yêu cầu</p>
+        <p class="text-sm mb-4">Tư vấn riêng, hệ thống riêng</p>
+        <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Tư vấn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form đăng ký -->
+  <section id="form" class="py-16 max-w-xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center mb-6">Đăng ký tư vấn</h2>
+    <form class="bg-white p-6 rounded shadow space-y-4">
+      <input type="text" placeholder="Họ tên" class="w-full border p-2 rounded">
+      <input type="email" placeholder="Email" class="w-full border p-2 rounded">
+      <input type="tel" placeholder="Số điện thoại" class="w-full border p-2 rounded">
+      <select class="w-full border p-2 rounded">
+        <option>Chọn gói quan tâm</option>
+        <option>Gói SaaS</option>
+        <option>Mua Trọn Gói</option>
+        <option>Gói Doanh nghiệp</option>
+      </select>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Gửi đăng ký</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2025 Trung's Software. All rights reserved.</p>
+  </footer>
+</body>
+</html>
