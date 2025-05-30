@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giải pháp quản lý trung tâm</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Hero -->
-  <section class="bg-white py-16 text-center">
-    <h1 class="text-4xl font-bold mb-4">Giải pháp quản lý trung tâm toàn diện</h1>
-    <p class="text-lg mb-6">Tiết kiệm thời gian, tối ưu chi phí, dễ dàng triển khai</p>
-    <a href="#pricing" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Xem bảng giá</a>
-  </section>
-
-  <!-- Lợi ích -->
-  <section class="py-16 max-w-6xl mx-auto">
-    <h2 class="text-2xl font-semibold text-center mb-10">Lợi ích khi sử dụng phần mềm</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 rounded shadow">Quản lý học viên & lớp học dễ dàng</div>
-      <div class="bg-white p-6 rounded shadow">Báo cáo thống kê đầy đủ, minh bạch</div>
-      <div class="bg-white p-6 rounded shadow">Hỗ trợ kỹ thuật nhanh chóng & chuyên nghiệp</div>
-    </div>
-  </section>
-
-  <!-- Pricing -->
-  <section id="pricing" class="py-16 bg-gray-100">
-    <h2 class="text-2xl font-semibold text-center mb-10">Bảng giá dịch vụ</h2>
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Gói SaaS -->
-      <div class="bg-white p-6 rounded shadow text-center">
-        <h3 class="text-xl font-bold mb-2">Gói SaaS</h3>
-        <p class="mb-2">Từ <strong>500.000đ/tháng</strong></p>
-        <p class="text-sm mb-4">Giới hạn theo số lượng tài liệu</p>
-        <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Đăng ký</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giải pháp quản lý trung tâm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Banner -->
+    <header class="relative">
+      <img src="banner.jpg" alt="Banner trung tâm" class="w-full h-64 object-cover" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
+        <img src="logo.png" alt="Logo trung tâm" class="h-16 mb-4" />
+        <h1 class="text-3xl md:text-4xl font-bold">Giải pháp quản lý trung tâm toàn diện</h1>
+        <p class="mt-2 text-lg">Tiết kiệm thời gian – Tối ưu vận hành – Hỗ trợ tận tâm</p>
       </div>
+    </header>
 
-      <!-- Gói Mua trọn gói -->
-      <div class="bg-white p-6 rounded shadow text-center border-2 border-blue-500">
-        <h3 class="text-xl font-bold mb-2">Mua Trọn Gói</h3>
-        <p class="mb-2">Liên hệ báo giá</p>
-        <p class="text-sm mb-4">+ phí duy trì server & hỗ trợ</p>
-        <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Liên hệ</a>
+    <!-- Gói giải pháp -->
+    <section class="max-w-6xl mx-auto py-12 px-4">
+      <h2 class="text-2xl font-bold text-center mb-10">Các Gói Giải Pháp</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Gói SaaS -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-xl font-bold mb-2">Gói SaaS</h3>
+          <ul class="text-sm mb-4 space-y-1">
+            <li>✅ Sử dụng theo tháng</li>
+            <li>✅ Giới hạn số hồ sơ</li>
+            <li>✅ Bao gồm server, hỗ trợ</li>
+          </ul>
+          <p class="text-lg font-semibold text-blue-600 mb-4">Từ 499.000đ/tháng</p>
+        </div>
+
+        <!-- Gói Trọn Gói -->
+        <div class="bg-white rounded-2xl shadow p-6 border border-blue-600">
+          <h3 class="text-xl font-bold mb-2">Mua Trọn Gói</h3>
+          <ul class="text-sm mb-4 space-y-1">
+            <li>💼 Thanh toán 1 lần</li>
+            <li>💻 Triển khai trên máy chủ riêng</li>
+            <li>🛠 Hỗ trợ kỹ thuật hàng năm</li>
+          </ul>
+          <p class="text-lg font-semibold text-blue-600 mb-4">Liên hệ báo giá</p>
+        </div>
+
+        <!-- Gói Doanh Nghiệp -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-xl font-bold mb-2">Gói Doanh Nghiệp</h3>
+          <ul class="text-sm mb-4 space-y-1">
+            <li>🏢 Triển khai theo yêu cầu riêng</li>
+            <li>⚙️ Kết nối phần mềm, tích hợp</li>
+            <li>📊 Tùy chỉnh báo cáo</li>
+          </ul>
+          <p class="text-lg font-semibold text-blue-600 mb-4">Tùy theo yêu cầu</p>
+        </div>
       </div>
+    </section>
 
-      <!-- Gói Doanh nghiệp lớn -->
-      <div class="bg-white p-6 rounded shadow text-center">
-        <h3 class="text-xl font-bold mb-2">Gói Doanh nghiệp</h3>
-        <p class="mb-2">Tuỳ chỉnh theo yêu cầu</p>
-        <p class="text-sm mb-4">Tư vấn riêng, hệ thống riêng</p>
-        <a href="#form" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Tư vấn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Form đăng ký -->
-  <section id="form" class="py-16 max-w-xl mx-auto">
-    <h2 class="text-2xl font-semibold text-center mb-6">Đăng ký tư vấn</h2>
-    <form class="bg-white p-6 rounded shadow space-y-4">
-      <input type="text" placeholder="Họ tên" class="w-full border p-2 rounded">
-      <input type="email" placeholder="Email" class="w-full border p-2 rounded">
-      <input type="tel" placeholder="Số điện thoại" class="w-full border p-2 rounded">
-      <select class="w-full border p-2 rounded">
-        <option>Chọn gói quan tâm</option>
-        <option>Gói SaaS</option>
-        <option>Mua Trọn Gói</option>
-        <option>Gói Doanh nghiệp</option>
-      </select>
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Gửi đăng ký</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-6">
-    <p>© 2025 Trung's Software. All rights reserved.</p>
-  </footer>
-</body>
+    <!-- Form -->
+    <section class="bg-white max-w-2xl mx-auto p-6 rounded-xl shadow mb-12">
+      <h3 class="text-xl font-semibold mb-4">Đăng ký tư vấn</h3>
+      <form action="https://formspree.io/f/mjkrbrel" method="POST">
+        <input type="hidden" name="_redirect" value="thankyou.html" />
+        <div class="space-y-4">
+          <input type="text" name="name" placeholder="Họ tên" class="w-full border p-2 rounded" required />
+          <input type="email" name="email" placeholder="Email" class="w-full border p-2 rounded" required />
+          <input type="tel" name="phone" placeholder="Số điện thoại" class="w-full border p-2 rounded" />
+          <select name="plan" class="w-full border p-2 rounded">
+            <option value="">Chọn gói quan tâm</option>
+            <option>Gói SaaS</option>
+            <option>Mua Trọn Gói</option>
+            <option>Gói Doanh Nghiệp</option>
+          </select>
+        </div>
+        <button type="submit" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Gửi đăng ký</button>
+      </form>
+    </section>
+  </body>
 </html>
