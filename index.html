@@ -2,18 +2,28 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Giải pháp quản lý trung tâm</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-50 text-gray-800 font-sans">
     <!-- Banner -->
     <header class="relative">
-      <img src="banner.jpg" alt="Banner trung tâm" class="w-full h-64 object-cover" />
-      <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4">
+      <img
+        src="banner.jpg"
+        alt="Banner trung tâm"
+        class="w-full h-64 object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center px-4"
+      >
         <img src="logo.png" alt="Logo trung tâm" class="h-16 mb-4" />
-        <h1 class="text-3xl md:text-4xl font-bold">Giải pháp quản lý trung tâm toàn diện</h1>
-        <p class="mt-2 text-lg">Tiết kiệm thời gian – Tối ưu vận hành – Hỗ trợ tận tâm</p>
+        <h1 class="text-3xl md:text-4xl font-bold">
+          Giải pháp quản lý trung tâm toàn diện
+        </h1>
+        <p class="mt-2 text-lg">
+          Tiết kiệm thời gian – Tối ưu vận hành – Hỗ trợ tận tâm
+        </p>
       </div>
     </header>
 
@@ -22,58 +32,264 @@
       <h2 class="text-2xl font-bold text-center mb-10">Các Gói Giải Pháp</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Gói SaaS -->
-        <div class="bg-white rounded-2xl shadow p-6">
-          <h3 class="text-xl font-bold mb-2">Gói SaaS</h3>
-          <ul class="text-sm mb-4 space-y-1">
-            <li>✅ Sử dụng theo tháng</li>
-            <li>✅ Giới hạn số hồ sơ</li>
-            <li>✅ Bao gồm server, hỗ trợ</li>
-          </ul>
-          <p class="text-lg font-semibold text-blue-600 mb-4">Từ 499.000đ/tháng</p>
+        <div
+          class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-xl font-bold mb-2">Gói SaaS</h3>
+            <ul class="text-sm mb-4 space-y-1">
+              <li>✅ Sử dụng theo tháng</li>
+              <li>✅ Giới hạn số hồ sơ</li>
+              <li>✅ Bao gồm server, hỗ trợ</li>
+            </ul>
+            <p class="text-lg font-semibold text-blue-600 mb-4">
+              Từ 499.000đ/tháng
+            </p>
+          </div>
+          <button
+            data-modal-target="modal-saas"
+            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Xem chi tiết
+          </button>
         </div>
 
         <!-- Gói Trọn Gói -->
-        <div class="bg-white rounded-2xl shadow p-6 border border-blue-600">
-          <h3 class="text-xl font-bold mb-2">Mua Trọn Gói</h3>
-          <ul class="text-sm mb-4 space-y-1">
-            <li>💼 Thanh toán 1 lần</li>
-            <li>💻 Triển khai trên máy chủ riêng</li>
-            <li>🛠 Hỗ trợ kỹ thuật hàng năm</li>
-          </ul>
-          <p class="text-lg font-semibold text-blue-600 mb-4">Liên hệ báo giá</p>
+        <div
+          class="bg-white rounded-2xl shadow p-6 border border-blue-600 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-xl font-bold mb-2">Mua Trọn Gói</h3>
+            <ul class="text-sm mb-4 space-y-1">
+              <li>💼 Thanh toán 1 lần</li>
+              <li>💻 Triển khai trên máy chủ riêng</li>
+              <li>🛠 Hỗ trợ kỹ thuật hàng năm</li>
+            </ul>
+            <p class="text-lg font-semibold text-blue-600 mb-4">Liên hệ báo giá</p>
+          </div>
+          <button
+            data-modal-target="modal-full"
+            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Xem chi tiết
+          </button>
         </div>
 
         <!-- Gói Doanh Nghiệp -->
-        <div class="bg-white rounded-2xl shadow p-6">
-          <h3 class="text-xl font-bold mb-2">Gói Doanh Nghiệp</h3>
-          <ul class="text-sm mb-4 space-y-1">
-            <li>🏢 Triển khai theo yêu cầu riêng</li>
-            <li>⚙️ Kết nối phần mềm, tích hợp</li>
-            <li>📊 Tùy chỉnh báo cáo</li>
-          </ul>
-          <p class="text-lg font-semibold text-blue-600 mb-4">Tùy theo yêu cầu</p>
+        <div
+          class="bg-white rounded-2xl shadow p-6 flex flex-col justify-between"
+        >
+          <div>
+            <h3 class="text-xl font-bold mb-2">Gói Doanh Nghiệp</h3>
+            <ul class="text-sm mb-4 space-y-1">
+              <li>🏢 Triển khai theo yêu cầu riêng</li>
+              <li>⚙️ Kết nối phần mềm, tích hợp</li>
+              <li>📊 Tùy chỉnh báo cáo</li>
+            </ul>
+            <p class="text-lg font-semibold text-blue-600 mb-4">Tùy theo yêu cầu</p>
+          </div>
+          <button
+            data-modal-target="modal-enterprise"
+            class="mt-auto bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            Xem chi tiết
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- Form -->
-    <section class="bg-white max-w-2xl mx-auto p-6 rounded-xl shadow mb-12">
+    <!-- Form đăng ký -->
+    <section
+      class="bg-white max-w-2xl mx-auto p-6 rounded-xl shadow mb-12"
+    >
       <h3 class="text-xl font-semibold mb-4">Đăng ký tư vấn</h3>
       <form action="https://formspree.io/f/mjkrbrel" method="POST">
         <input type="hidden" name="_redirect" value="thankyou.html" />
         <div class="space-y-4">
-          <input type="text" name="name" placeholder="Họ tên" class="w-full border p-2 rounded" required />
-          <input type="email" name="email" placeholder="Email" class="w-full border p-2 rounded" required />
-          <input type="tel" name="phone" placeholder="Số điện thoại" class="w-full border p-2 rounded" />
-          <select name="plan" class="w-full border p-2 rounded">
+          <input
+            type="text"
+            name="name"
+            placeholder="Họ tên"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Số điện thoại"
+            class="w-full border p-2 rounded"
+          />
+          <select
+            name="plan"
+            class="w-full border p-2 rounded"
+          >
             <option value="">Chọn gói quan tâm</option>
             <option>Gói SaaS</option>
             <option>Mua Trọn Gói</option>
             <option>Gói Doanh Nghiệp</option>
           </select>
         </div>
-        <button type="submit" class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Gửi đăng ký</button>
+        <button
+          type="submit"
+          class="mt-6 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        >
+          Gửi đăng ký
+        </button>
       </form>
     </section>
+
+    <!-- Popup Modal chung -->
+    <div
+      id="modal-saas"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-saas-title"
+    >
+      <div
+        class="bg-white rounded-xl max-w-lg w-full p-6 relative shadow-lg"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-500 hover:text-gray-900 text-2xl font-bold"
+          aria-label="Đóng"
+          data-modal-close="modal-saas"
+        >
+          &times;
+        </button>
+        <h2
+          id="modal-saas-title"
+          class="text-xl font-bold mb-4"
+        >
+          Chi tiết Gói SaaS
+        </h2>
+        <p class="mb-4">
+          - Sử dụng theo tháng, linh hoạt tăng giảm.<br />
+          - Giới hạn số lượng hồ sơ theo gói.<br />
+          - Bao gồm chi phí server, database và hỗ trợ kỹ thuật.<br />
+          - Phù hợp với trung tâm mới hoặc muốn tiết kiệm chi phí đầu tư ban đầu.<br />
+          - Không cần đầu tư hạ tầng riêng, tập trung vào vận hành.
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="modal-full"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-full-title"
+    >
+      <div
+        class="bg-white rounded-xl max-w-lg w-full p-6 relative shadow-lg"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-500 hover:text-gray-900 text-2xl font-bold"
+          aria-label="Đóng"
+          data-modal-close="modal-full"
+        >
+          &times;
+        </button>
+        <h2
+          id="modal-full-title"
+          class="text-xl font-bold mb-4"
+        >
+          Chi tiết Mua Trọn Gói
+        </h2>
+        <p class="mb-4">
+          - Thanh toán một lần, sở hữu bản quyền phần mềm.<br />
+          - Triển khai trên máy chủ riêng, kiểm soát dữ liệu tối đa.<br />
+          - Hỗ trợ kỹ thuật và cập nhật trong 1 năm.<br />
+          - Phù hợp với trung tâm lớn, có nhu cầu tùy chỉnh riêng.<br />
+          - Có thể mở rộng tính năng theo yêu cầu.
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="modal-enterprise"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-enterprise-title"
+    >
+      <div
+        class="bg-white rounded-xl max-w-lg w-full p-6 relative shadow-lg"
+      >
+        <button
+          class="absolute top-3 right-3 text-gray-500 hover:text-gray-900 text-2xl font-bold"
+          aria-label="Đóng"
+          data-modal-close="modal-enterprise"
+        >
+          &times;
+        </button>
+        <h2
+          id="modal-enterprise-title"
+          class="text-xl font-bold mb-4"
+        >
+          Chi tiết Gói Doanh Nghiệp
+        </h2>
+        <p class="mb-4">
+          - Triển khai giải pháp theo yêu cầu riêng biệt.<br />
+          - Kết nối tích hợp đa hệ thống phần mềm.<br />
+          - Tùy chỉnh báo cáo và giao diện theo nhu cầu.<br />
+          - Hỗ trợ kỹ thuật 24/7.<br />
+          - Phù hợp với trung tâm lớn, quy mô nhiều chi nhánh.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Hàm mở modal
+      function openModal(id) {
+        const modal = document.getElementById(id);
+        if (modal) {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+        }
+      }
+      // Hàm đóng modal
+      function closeModal(id) {
+        const modal = document.getElementById(id);
+        if (modal) {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+        }
+      }
+
+      // Gán sự kiện cho nút mở modal
+      document.querySelectorAll("[data-modal-target]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const target = btn.getAttribute("data-modal-target");
+          openModal(target);
+        });
+      });
+
+      // Gán sự kiện cho nút đóng modal
+      document.querySelectorAll("[data-modal-close]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const target = btn.getAttribute("data-modal-close");
+          closeModal(target);
+        });
+      });
+
+      // Đóng modal khi bấm ngoài content modal
+      document.querySelectorAll(
+        "#modal-saas, #modal-full, #modal-enterprise"
+      ).forEach((modal) => {
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
